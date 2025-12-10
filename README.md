@@ -34,7 +34,7 @@ The API returns the top restaurants where the selected dish has been ordered the
    npm install
 2. Create a .env file in the root:
    - DB_URI=your_DB_URI
-   - PORT=yourPORT
+   - PORT=your_PORT
 3. start the server with command : npm run dev
 
 ### API Endpoints
