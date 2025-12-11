@@ -22,7 +22,7 @@ The API returns the top restaurants where the selected dish has been ordered the
 - Database: MYSQL , Sequelize(ORM)
 
 ### Other Tools
-- Deployment: Railway
+- Deployment:Render, Railway
 - API Testing: Postman
 
 ### Installation
