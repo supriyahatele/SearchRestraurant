@@ -4,9 +4,6 @@
 A simple Node.js + Express + MySQL backend service that allows users to search for restaurants based on a dish name with a mandatory price range filter.
 The API returns the top restaurants where the selected dish has been ordered the most.
 
-### Deployed Link:
-- Backend : 
-
 ### Project Type 
  Backend Project
 
@@ -22,7 +19,7 @@ The API returns the top restaurants where the selected dish has been ordered the
 - Database: MYSQL , Sequelize(ORM)
 
 ### Other Tools
-- Deployment: Railway
+- Deployment:Render, Railway
 - API Testing: Postman
 
 ### Installation
@@ -37,11 +34,14 @@ The API returns the top restaurants where the selected dish has been ordered the
    - PORT=your_PORT
 3. start the server with command : npm run dev
 
+### Deployed Link:
+- Backend : https://searchrestraurant-3.onrender.com
+
 ### API Endpoints
- - GET /search/dishes?name=dishName&minPrice=minPrice&maxPrice=max
+ - GET /api/v1/search/dishes?name=dishName&minPrice=minPrice&maxPrice=max
 
 ### Example 
-   GET /search/dishes?name=biryani&minPrice=150&maxPrice=300
+ - GET [/api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300](https://searchrestraurant-3.onrender.com/api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300)
 
 ### Example Response
     "restaurants": [
