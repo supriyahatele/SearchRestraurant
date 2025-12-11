@@ -5,7 +5,7 @@ A simple Node.js + Express + MySQL backend service that allows users to search f
 The API returns the top restaurants where the selected dish has been ordered the most.
 
 ### Deployed Link:
-- Backend : https://ecowiser-backend-1.onrender.com
+- Backend : 
 
 ### Project Type 
  Backend Project
@@ -34,7 +34,7 @@ The API returns the top restaurants where the selected dish has been ordered the
    npm install
 2. Create a .env file in the root:
    - DB_URI=your_DB_URI
-   - PORT=yourPORT
+   - PORT=your_PORT
 3. start the server with command : npm run dev
 
 ### API Endpoints
