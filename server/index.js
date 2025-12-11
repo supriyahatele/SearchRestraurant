@@ -1,6 +1,6 @@
 const express = require('express');
 // A. Import sequelize instance and ConnectionDb
-const { sequelize, ConnectionDb } = require('./src/config/connectionToDb'); 
+const { sequelize, ConnectionDb } = require('./src/config/connectionToDb');
 
 const { router } = require('./src/routes/restaurantRoute');
 const seedDatabase = require('./src/seeder/seed');
@@ -10,13 +10,15 @@ const seedDatabase = require('./src/seeder/seed');
 const app = express();
 app.use(express.json());
 
-const port = process.env.PORT|| 3000;
-
-app.use('/api/v1',router)
+const port = process.env.PORT || 3000;
+app.use('/', (req, res) => {
+    res.json({ message: "API is running successfully!" });
+});
+app.use('/api/v1', router)
 app.listen(port, async () => {
 
     // 1. Check Connection
-    await ConnectionDb(); 
+    await ConnectionDb();
 
     try {
         // 2. Synchronize (create tables)
@@ -24,8 +26,8 @@ app.listen(port, async () => {
         console.log('Database schemas synchronized.');
 
         // 3. Seed (fill tables with data)
-     
-        await seedDatabase(); 
+
+        await seedDatabase();
         console.log('Database seeding complete!');
 
         // 4. Start Server
