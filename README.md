@@ -41,7 +41,7 @@ The API returns the top restaurants where the selected dish has been ordered the
  - GET /api/v1/search/dishes?name=dishName&minPrice=minPrice&maxPrice=max
 
 ### Example 
-   GET /api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300
+   GET [/api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300](https://searchrestraurant-3.onrender.com/api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300)
 
 ### Example Response
     "restaurants": [
