@@ -1,11 +1,8 @@
 const express = require('express');
-// A. Import sequelize instance and ConnectionDb
+// A. sequelize instance and ConnectionDb
 const { sequelize, ConnectionDb } = require('./src/config/connectionToDb');
-
 const { router } = require('./src/routes/restaurantRoute');
 const seedDatabase = require('./src/seeder/seed');
-// B. Import the seed function 
-
 
 const app = express();
 app.use(express.json());
@@ -26,7 +23,6 @@ app.listen(port, async () => {
         console.log('Database schemas synchronized.');
 
         // 3. Seed (fill tables with data)
-
         await seedDatabase();
         console.log('Database seeding complete!');
 
