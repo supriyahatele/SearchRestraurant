@@ -1,4 +1,4 @@
-const { sequelize } = require('../config/connectTODb');
+const { sequelize } = require('../config/connectionToDb');
 const db = {};
 
 // 1. Load Models
