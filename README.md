@@ -5,7 +5,7 @@ A simple Node.js + Express + MySQL backend service that allows users to search f
 The API returns the top restaurants where the selected dish has been ordered the most.
 
 ### Deployed Link:
-- Backend : 
+- Backend : https://searchrestraurant-3.onrender.com
 
 ### Project Type 
  Backend Project
@@ -38,10 +38,10 @@ The API returns the top restaurants where the selected dish has been ordered the
 3. start the server with command : npm run dev
 
 ### API Endpoints
- - GET /search/dishes?name=dishName&minPrice=minPrice&maxPrice=max
+ - GET /api/v1/search/dishes?name=dishName&minPrice=minPrice&maxPrice=max
 
 ### Example 
-   GET /search/dishes?name=biryani&minPrice=150&maxPrice=300
+   GET /api/v1/search/dishes?name=biryani&minPrice=150&maxPrice=300
 
 ### Example Response
     "restaurants": [
